@@ -21,6 +21,7 @@ CREATE TABLE h3.users (
     email           VARCHAR (30) NOT NULL UNIQUE,
     first_name      VARCHAR(30),
     last_name       VARCHAR(30),
+    phone_number    VARCHAR(10),
     first_visit     BOOLEAN DEFAULT TRUE,
     created_at      TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL,
     updated_at      TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL
