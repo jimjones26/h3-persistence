@@ -22,6 +22,8 @@ CREATE TABLE h3.users (
     first_name      VARCHAR(30),
     last_name       VARCHAR(30),
     phone_number    VARCHAR(10),
+    gender_pref     VARCHAR(6),
+    apoint_pref     VARCHAR(9),
     first_visit     BOOLEAN DEFAULT TRUE,
     created_at      TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL,
     updated_at      TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL
