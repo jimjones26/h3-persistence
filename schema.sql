@@ -38,7 +38,16 @@ CREATE TABLE h3.practitioners (
   city              VARCHAR(30),
   state             VARCHAR(30),
   zip               VARCHAR(30),
-  PRIMARY KEY       (user_id)
+  setup_complete    BOOLEAN DEFAULT FALSE,
+  session_fee       VARCHAR(3),
+  session_time      VARCHAR(3),
+  main_focus        VARCHAR(500),
+  affiliation       VARCHAR(500),
+  experience        VARCHAR(2),
+  biography         VARCHAR(500),
+  PRIMARY KEY       (user_id),
+  created_at      TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL,
+  updated_at      TIMESTAMP WITH TIME ZONE DEFAULT now() NOT NULL
 );
 
 -- create the table for scopes
