@@ -39,6 +39,7 @@ CREATE TABLE h3.practitioners (
   state             VARCHAR(30),
   zip               VARCHAR(30),
   setup_complete    BOOLEAN DEFAULT FALSE,
+  modalities        VARCHAR(500),
   session_fee       VARCHAR(3),
   session_time      VARCHAR(3),
   main_focus        VARCHAR(500),
